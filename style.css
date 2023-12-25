@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: plum;
+    text-align: center;
+    .box{
+        background-color: bisque;
+    }
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;
+    color: #b0413e;
+    text-shadow: 2px 2px 20px #b0413e;
+    /* background-color: bisque; */
+}
+.btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}
+.newbtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}
+#para{
+    color:darkslateblue;
+    font-size: 5vmin;
+}
+.main{
+    height:30vmin ;
+}
+.hide{
+    display: none;
+}
+label{
+    width: 163px;
+    height: 60px;
+    display: block;
+    background-color: #000;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative
+   
+
+}
+#tick{
+    display: none;
+}
+#ball{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    left: 0px;
+    margin: 5px;
+    transition: all 0.2s linear;
+    
+}
+#tick:checked + #ball{
+    transform: translateX(100px);
+    box-shadow: 0px 0px 40px 20px #fff;
+}
+.dark{
+    background-color: #36454F;
+    color: white;
+    text-shadow:   1px 1px 10px white;
+    .box{
+        background-color: cadetblue;
+        color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+    }
+    .btn{
+        text-shadow:   1px 1px 10px white;
+    }
+}
+.light{
+    background-color: white;
+    color: #000;
+    .box{
+        background-color: bisque;
+    }
+}
+.modetext{
+    position: relative;
+    display: inline-block;
+    right: 680px;
+}
+@media screen and (max-width: 642px) {
+    .modetext{
+        position: relative;
+        display: inline-block;
+        right: 78px ;
+    }
+    
+}
